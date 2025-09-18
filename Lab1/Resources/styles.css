@@ -1,0 +1,355 @@
+.main,
+.main * {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #060f14;
+}
+
+.main {
+  background: #060f14;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.picture-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+}
+.header {
+  background: rgba(0, 0, 0, 0.01);
+  padding: 0px 40px 0px 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(50px);
+}
+.wv-monogram {
+  color: #dcb700;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 80px;
+  letter-spacing: -0.2em;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.previous-works {
+  color: #c7dcfc;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+}
+.separating-div {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.members {
+  color: #c7dcfc;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+}
+.member-1 {
+  color: #c7dcfc;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+}
+.member-2 {
+  color: #cdd3bd;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+}
+.member-3 {
+  color: #d2ca7e;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+}
+.member-4 {
+  color: #d7c13f;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+}
+.member-5 {
+  color: #dcb700;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+}
+.hero {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.weather-vanes-logo-svg-1 {
+  flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+.clip-path-group {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.weather-vanes-title {
+  color: #c7dcfc;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 80px;
+  font-weight: 700;
+  position: relative;
+}
+.team-slogan-subtitle {
+  color: #c7dcfc;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+}
+.previous-works2 {
+  padding: 100px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.previous-works3 {
+  color: #dcb700;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 60px;
+  font-weight: 700;
+  position: relative;
+}
+.prev-work-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.title {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 68px;
+  position: relative;
+  overflow: hidden;
+}
+.weathervanes-website {
+  color: #dcb700;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  flex: 1;
+}
+.description {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.desc-text {
+  color: #c7dcfc;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  width: 865px;
+}
+.image {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.website-thumbnail {
+  flex-shrink: 0;
+  width: 885px;
+  height: 499.79px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 885/499.79;
+}
+.prev-work-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.title2 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 68px;
+  position: relative;
+  overflow: hidden;
+}
+.weathervanes-web-app {
+  color: #dcb700;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  flex: 1;
+}
+.description2 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.prev-work-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.project-3 {
+  color: #dcb700;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  flex: 1;
+}
+
+a {
+  padding: 10px;
+  text-decoration: none; 
+  transition: font-size 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a:hover {
+  font-size: 35px;
+}
+
+/* portfolio styling */
+h1 {
+  color: #dcb700;
+  text-align: left;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  flex: 1;
+}
