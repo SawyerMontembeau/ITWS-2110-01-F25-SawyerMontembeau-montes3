@@ -1,0 +1,134 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #000000; 
+    width: 51%; 
+    background: url('titlecard.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Styling for API Cards */
+.api-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Loading State styles */
+.api-card.loading .loader {
+    display: block;
+}
+.api-card.loading .card-content {
+    display: none;
+}
+
+.api-card .loader {
+    display: none;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #60a5fa;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: rotation 1s linear infinite;
+    margin: 4rem auto;
+}
+
+/* Loader Animation */
+@keyframes rotation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Weather Container Specifics */
+#weather-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: #1e3a8a;
+}
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#temperature {
+    font-size: 5rem;
+    font-weight: 300;
+    margin: 0 0 0 1rem;
+    line-height: 1;
+    color: #1e3a8a;
+}
+
+#description {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    color: #475569;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1.5rem;
+}
+
+.detail-item span {
+    font-size: 0.9rem;
+    color: #475569;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.detail-item strong {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e3a8a;
+}
+
+/* Second API Container Specifics */
+#second-api-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: #1e3a8a;
+    text-decoration: underline;
+}

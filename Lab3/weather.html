@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & News Dashboard</title>
+    <link rel="stylesheet" href="Resources/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Weather & News Dashboard</h1>    
+    </header>
+
+    <main class="container">
+       
+        <section id="weather-container" class="api-card loading">
+            <div class="loader"></div>
+            <div class="card-content">
+                <h1 id="location">Fetching weather...</h1>
+                <div class="weather-main">
+                    <img id="weather-icon" src="https://placehold.co/100x100/e2e8f0/e2e8f0?text=..." alt="Weather Icon">
+                    <p id="temperature">--°F</p>
+                </div>
+                <p id="description">Please wait</p>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <span>Feels Like</span>
+                        <strong id="feels-like">--°F</strong>
+                    </div>
+                    <div class="detail-item">
+                        <span>Humidity</span>
+                        <strong id="humidity">--%</strong>
+                    </div>
+                    <div class="detail-item">
+                        <span>Wind</span>
+                        <strong id="wind-speed">-- mph</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="second-api-container" class="api-card loading">
+            <div class="loader"></div>
+            <div class="card-content">
+                 <h2 id="news-header">Top Headlines</h2>
+                 <div id="second-api-content">
+                    <!-- News articles will be populated by JavaScript -->
+                 </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="resources/script.js"></script>
+</body>
+</html>
