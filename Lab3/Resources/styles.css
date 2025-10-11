@@ -40,29 +40,10 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* Loading State styles */
-.api-card.loading .loader {
-    display: block;
-}
+/* Loading State style */
+
 .api-card.loading .card-content {
     display: none;
-}
-
-.api-card .loader {
-    display: none;
-    width: 48px;
-    height: 48px;
-    border: 5px solid #60a5fa;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    animation: rotation 1s linear infinite;
-    margin: 4rem auto;
-}
-
-/* Loader Animation */
-@keyframes rotation {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 
 /* Weather Container Specifics */

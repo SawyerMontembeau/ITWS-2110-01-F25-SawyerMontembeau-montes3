@@ -16,7 +16,7 @@ const openWeatherApiKey = 'c81489afd5d230b3ef7452cc96412aff';
 const newsApiKey = '70439559e4de4efa87bb5b8d192e8f76';
 const troyCoords = { lat: 42.7284, lon: -73.6918 };
 
-// Executed on page load ---
+// Executed on page load
 window.addEventListener('load', () => {
     navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleGeoError);
 });
@@ -24,13 +24,10 @@ window.addEventListener('load', () => {
 // Geolocation Handlers 
 function handleGeoSuccess(position) {
     const { latitude, longitude } = position.coords;
-    console.log("Geolocation successful:", { latitude, longitude });
     fetchWeatherData(latitude, longitude);
 }
 
 function handleGeoError(error) {
-    console.error("Geolocation error:", error.message);
-    alert("Could not get your location. Showing weather for Troy, NY instead.");
     fetchWeatherData(troyCoords.lat, troyCoords.lon);
 }
 
@@ -49,14 +46,6 @@ function fetchWeatherData(lat, lon) {
             // After weather is displayed, fetch news for that location's country
             fetchNewsData(data.sys.country);
         })
-        .catch(error => {
-            console.error('Error fetching weather data:', error);
-            locationElement.textContent = "Weather data unavailable.";
-            weatherContainer.classList.remove('loading');
-            // Also handle news container loading state on weather error
-            newsHeaderElement.textContent = "News unavailable";
-            secondApiContainer.classList.remove('loading');
-        });
 }
 
 //  News API Fetch
@@ -71,12 +60,7 @@ function fetchNewsData(countryCode) {
         .then(data => {
             console.log("NewsAPI Data:", data);
             displayNewsData(data, countryCode);
-        })
-        .catch(error => {
-            console.error('Error fetching news data:', error);
-            newsHeaderElement.textContent = `Could not fetch news.`;
-            secondApiContainer.classList.remove('loading');
-        });
+        })   
 }
 
 //  DOM Update Funcs
