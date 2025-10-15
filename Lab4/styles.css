@@ -1,0 +1,4 @@
+body { background: linear-gradient(180deg,#f7fbff,#ffffff); min-height:100vh; }
+.card { border-radius: 12px; }
+#weatherDisplay img { width:64px; height:64px; object-fit:contain; }
+.placeholder { height: 2rem; background: linear-gradient(90deg,#e9ecef,#f8f9fa,#e9ecef); display:block; border-radius:6px; }
